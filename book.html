@@ -5,6 +5,13 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Book Now - Harry Luxury Hotel</title>
   <link rel="stylesheet" href="style.css">
+  <script>
+    // Redirect to thankyou.html on submit
+    function handleBooking(event) {
+      event.preventDefault(); 
+      window.location.href = "thankyou.html"; 
+    }
+  </script>
 </head>
 <body>
 
@@ -32,7 +39,7 @@
   <!-- Booking Section -->
   <section class="booking-container">
     <h1>Book Your Stay</h1>
-    <form class="booking-form">
+    <form class="booking-form" onsubmit="handleBooking(event)">
       <label for="name">Full Name</label>
       <input type="text" id="name" placeholder="Enter your full name" required>
 
