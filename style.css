@@ -14,6 +14,7 @@ header {
   justify-content: space-between;
   align-items: center;
   padding: 15px 40px;
+  flex-wrap: wrap;
 }
 
 header .logo {
@@ -28,8 +29,15 @@ header .logo img {
   margin-right: 10px;
 }
 
+nav {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
 nav a {
-  margin: 0 10px;
+  margin: 5px;
   color: white;
   text-decoration: none;
   display: inline-flex;
@@ -52,7 +60,7 @@ nav a {
 
 /* Hero Section */
 .hero {
-  background: url("images/icon.png") no-repeat center/cover; /* Replace with your main hero image */
+  background: url("images/icon.png") no-repeat center/cover; /* Replace with your hero image */
   height: 90vh;
   color: white;
   text-align: center;
@@ -60,6 +68,7 @@ nav a {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  padding: 0 20px;
 }
 
 .hero h1 {
@@ -124,4 +133,69 @@ footer {
   color: white;
   text-align: center;
   padding: 20px;
+}
+
+/* -------------------- */
+/* Responsive Styles */
+/* -------------------- */
+
+@media (max-width: 1024px) {
+  .hero h1 {
+    font-size: 40px;
+  }
+  .hero button {
+    font-size: 14px;
+    padding: 10px 20px;
+  }
+  nav {
+    justify-content: center;
+  }
+}
+
+@media (max-width: 768px) {
+  header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+
+  nav {
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+  }
+
+  .hero h1 {
+    font-size: 32px;
+  }
+
+  .hero button {
+    font-size: 14px;
+    padding: 10px 20px;
+  }
+
+  .room-cards {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .room-cards .card {
+    width: 90%;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero h1 {
+    font-size: 26px;
+  }
+  .hero p {
+    font-size: 16px;
+  }
+  header .logo {
+    font-size: 18px;
+  }
+  .book-btn {
+    padding: 6px 12px;
+    font-size: 12px;
+  }
 }
