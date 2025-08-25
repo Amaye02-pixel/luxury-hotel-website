@@ -27,7 +27,6 @@ header .logo {
 
 header .logo img {
   margin-right: 10px;
-  filter: brightness(0) invert(1); /* Make logo icons fit black & gold theme if needed */
 }
 
 nav {
@@ -46,6 +45,11 @@ nav a {
   gap: 5px;
 }
 
+.nav-icon {
+  filter: brightness(0) invert(1); /* Convert icons to match black & gold */
+  width: 20px;
+}
+
 .book-btn {
   background: #D4AF37;
   color: #000000;
@@ -61,7 +65,7 @@ nav a {
 
 /* Hero Section */
 .hero {
-  background: url("images/icon.png") no-repeat center/cover; /* Replace with main hotel image */
+  background: url("images/icon.png") no-repeat center/cover;
   height: 90vh;
   color: #D4AF37;
   text-align: center;
@@ -109,8 +113,8 @@ section h2 {
 }
 
 .room-cards .card {
-  background: #000000; /* Black card */
-  border: 2px solid #D4AF37; /* Gold border */
+  background: #000000;
+  border: 2px solid #D4AF37;
   padding: 20px;
   border-radius: 12px;
   width: 180px;
@@ -120,7 +124,7 @@ section h2 {
 .room-cards img {
   width: 80px;
   margin-bottom: 10px;
-  filter: brightness(0) invert(1); /* Makes icons gold-ish if needed */
+  filter: brightness(0) invert(1);
 }
 
 /* Dining, Bar, Services */
@@ -140,10 +144,7 @@ footer {
   padding: 20px;
 }
 
-/* -------------------- */
 /* Responsive Styles */
-/* -------------------- */
-
 @media (max-width: 1024px) {
   .hero h1 { font-size: 40px; }
   .hero button { font-size: 14px; padding: 10px 20px; }
