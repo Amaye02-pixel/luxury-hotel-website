@@ -190,3 +190,43 @@ footer {
   transform: scale(1.05);
 }
 
+/* Thank You Page */
+.thankyou-container {
+  text-align: center;
+  margin: 80px auto;
+  padding: 40px;
+  max-width: 600px;
+  background: #111;
+  border-radius: 12px;
+  box-shadow: 0 0 15px rgba(212, 175, 55, 0.5);
+}
+
+.thankyou-container h1 {
+  font-size: 36px;
+  color: #D4AF37;
+  margin-bottom: 15px;
+}
+
+.thankyou-container p {
+  font-size: 18px;
+  margin-bottom: 25px;
+}
+
+.back-home {
+  display: inline-block;
+  padding: 12px 20px;
+  background: #D4AF37;
+  color: #000;
+  border-radius: 8px;
+  font-weight: bold;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.back-home:hover {
+  background: #000;
+  color: #D4AF37;
+  border: 2px solid #D4AF37;
+}
+
+
