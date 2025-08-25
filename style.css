@@ -7,8 +7,8 @@
 
 body {
   font-family: 'Poppins', sans-serif;
-  background-color: #000; /* black background */
-  color: #d4af37; /* gold text */
+  background-color: #000;
+  color: #d4af37;
   line-height: 1.6;
 }
 
@@ -57,7 +57,7 @@ header nav a.active {
   color: black;
 }
 
-/* Mobile Menu Button */
+/* -------------------- Mobile Menu Button -------------------- */
 .menu-btn {
   display: none;
   font-size: 1.8rem;
@@ -65,15 +65,17 @@ header nav a.active {
   color: #d4af37;
 }
 
-/* -------------------- Hero Section (Index page) -------------------- */
+/* -------------------- Hero Section -------------------- */
 .hero {
   position: relative;
   height: 60vh;
-  background: url("images/hotel.jpg") no-repeat center center/cover;
   display: flex;
   justify-content: center;
   align-items: center;
   text-align: center;
+  background: #111;
+  background-size: cover;
+  background-position: center;
 }
 
 .hero-overlay {
@@ -108,6 +110,7 @@ header nav a.active {
   background: black;
   color: #d4af37;
   border: 2px solid #d4af37;
+  transform: scale(1.05);
 }
 
 /* -------------------- Features Section -------------------- */
@@ -161,7 +164,7 @@ header nav a.active {
   box-shadow: 0 0 15px rgba(212, 175, 55, 0.7);
 }
 
-/* -------------------- Forms (Booking/Contact) -------------------- */
+/* -------------------- Forms (Booking / Contact) -------------------- */
 form, .booking {
   max-width: 600px;
   margin: 50px auto;
@@ -175,33 +178,49 @@ form h2, .booking h2 {
   text-align: center;
   margin-bottom: 20px;
   color: #d4af37;
+  font-size: 2rem;
+  letter-spacing: 0.5px;
 }
 
 form label {
   display: block;
   margin: 10px 0 5px;
+  font-weight: 500;
 }
 
 form input, form select, form textarea {
   width: 100%;
-  padding: 10px;
+  padding: 12px;
   margin-bottom: 15px;
   border-radius: 5px;
   border: 1px solid #d4af37;
   background: #000;
   color: #fff;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+}
+
+form input:focus,
+form select:focus,
+form textarea:focus {
+  outline: none;
+  border-color: #fff;
+}
+
+form textarea {
+  resize: vertical;
 }
 
 form button, .booking button {
   width: 100%;
-  padding: 12px;
+  padding: 14px;
   background: #d4af37;
   color: black;
   font-weight: bold;
   border: none;
   border-radius: 5px;
   cursor: pointer;
-  transition: 0.3s;
+  transition: all 0.3s ease;
 }
 
 form button:hover, .booking button:hover {
@@ -256,6 +275,15 @@ footer p {
 
   .nav-links.active {
     right: 0;
+  }
+
+  form, .booking {
+    padding: 20px;
+    margin: 30px 20px;
+  }
+
+  form h2, .booking h2 {
+    font-size: 1.8rem;
   }
 }
 
